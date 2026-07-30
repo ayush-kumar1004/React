@@ -15,7 +15,7 @@ const App = () => {
       location: "Menlo Park, USA"
     },
     {
-      brandLogo: "https://static.vecteezy.com/system/resources/previews/014/018/561/non_2x/amazon-logo-on-transparent-background-free-vector.jpg",
+      brandLogo: "https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg",
       companyName: "Amazon",
       datePosted: "2 weeks ago",
       post: "Backend Developer",
@@ -110,7 +110,7 @@ const App = () => {
     
     <div className="parent">
       {jobOpenings.map(function(elem){
-        return <h1>{elem.companyName}</h1>
+        return <Card brandLogo = {elem.brandLogo} location = {elem.location} company = {elem.companyName} tagn = {elem.tag1} tagm = {elem.tag2} date = {elem.datePosted} post = {elem.post} pay = {elem.pay}/>
       })}
     </div>
   )
